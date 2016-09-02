@@ -1,0 +1,71 @@
+#EventContent {
+    max-width: 100%;
+    a, a:hover, a:focus {
+        text-decoration: none;
+        color: $primary-colour;
+        border-width: 0;
+    }
+    a.btn, button {
+        margin: 0;
+        font-size: 12px;
+        background: $primary-colour;
+        color: $white;
+        &:hover {
+            background: $secondary-colour;
+        }
+    }
+    a.btn {
+        &:hover {
+            border-width: 0;
+        }
+        &:after {
+            content: "";
+            padding: 0;
+            display: none;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+    img {
+        border-width: 0;
+        max-width: 100%;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+        color: #444444;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 30px;
+        color: #444444;
+        letter-spacing: 2px;
+        line-height: 39px;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-weight: bold;
+        font-size: 20px;
+        color: #222222;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #444;
+    }
+    p {
+        font-size: 16px;
+        color: $dark-grey;
+        line-height: 20px;
+    }
+}

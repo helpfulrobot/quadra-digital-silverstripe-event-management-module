@@ -1,0 +1,6 @@
+---
+Name: events-management
+After:
+  - 'framework/*'
+  - 'cms/*'
+---

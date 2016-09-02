@@ -1,0 +1,39 @@
+{
+    "name": "quadra-digital/silverstripe-event-management-module",
+    "description": "The Silverstripe Event Management Module allows you to model real life events and display them in calendar and list views on your SilverStripe website.",
+    "homepage": "https://github.com/Quadra-Digital/silverstripe-event-management-module",
+    "time": "2016-09-01",
+    "keywords": [
+        "silverstripe",
+        "events",
+        "calendar",
+        "iCalendar"
+    ],
+    "version": "0.0.1-dev",
+    "type": "silverstripe-module",
+    "require": {
+        "silverstripe/cms": "~3.1",
+        "stevie-mayhew/silverstripe-svg": "~1.0"
+    },
+    "extra": {
+        "installer-name": "event-management"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Joe Harvey",
+            "email": "joe.harvey@quadradigital.co.uk",
+            "role": "Developer"
+        },
+        {
+            "name": "Leonardo Melo",
+            "email": "leonardo.melo@quadradigital.co.uk",
+            "role": "Developer",
+            "homepage": "http://leomeloxp.net"
+        }
+    ],
+    "support": {
+        "email": "developers@quadradigital.co.uk",
+        "issues": "https://github.com/Quadra-Digital/silverstripe-event-management-module/issues"
+    }
+}
