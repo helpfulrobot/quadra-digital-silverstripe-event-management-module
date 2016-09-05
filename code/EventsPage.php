@@ -6,9 +6,7 @@ class EventsPage extends Page {
 
     private static $description = "Displays all events in either a calendar or list view.";
 
-    private static $allowed_children = array(
-        'EventPage'
-    );
+    private static $allowed_children = "none";
 
     public function getCMSFields() {
         $fields = parent::getCMSFields();
