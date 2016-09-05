@@ -10,7 +10,6 @@ var rename       = require('gulp-rename');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
-var source     = require('vinyl-source-stream');
 
 function handleError(err) {
     var displayErr = gutil.colors.red("\n" + err.message + "\n" + err.file);
@@ -35,19 +34,6 @@ gulp.task('sass', function(){
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'));
-});
-
-gulp.task('editor-styling', function(){
-    return gulp.src('scss/_editor.scss')
-    .pipe(sourcemaps.init())
-    .pipe(concat('editor.css'))
-    .pipe(sass({
-        outputStyle: 'compressed',
-        sourcemap: true
-    }).on('error', handleError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('javascript', function() {
@@ -76,8 +62,7 @@ gulp.task('javascript-dependencies', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', ['javascript-dependencies', 'javascript','editor-styling', 'sass'], function(){
+gulp.task('default', ['javascript-dependencies', 'javascript', 'sass'], function(){
     gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch('./scss/**/_editor.scss', ['editor-styling']);
     gulp.watch('./js/**/*.js', ['javascript']);
 });
