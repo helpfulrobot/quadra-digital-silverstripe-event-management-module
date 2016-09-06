@@ -4,6 +4,9 @@
         text-decoration: none;
         color: $primary-colour;
         border-width: 0;
+        &.btn {
+            color: $white;
+        }
     }
     ul {
         margin: 0;
