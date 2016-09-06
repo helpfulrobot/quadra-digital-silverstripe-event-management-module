@@ -112,15 +112,6 @@
 					    	border-bottom-left-radius: 0;
 					    }
 					}
-					&.muted {
-						background: none;
-						color: $primary-colour;
-						text-overflow: ellipsis;
-						white-space: nowrap;
-						svg {
-							/* @todo add and style basket-andhoop.svg in page template */
-						}
-					}
 					&.first {
 						width: 98%;
 					}

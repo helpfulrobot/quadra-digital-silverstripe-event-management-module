@@ -5,25 +5,6 @@
         color: $primary-colour;
         border-width: 0;
     }
-    a.btn, button {
-        margin: 0;
-        font-size: 12px;
-        background: $primary-colour;
-        color: $white;
-        &:hover {
-            background: $secondary-colour;
-        }
-    }
-    a.btn {
-        &:hover {
-            border-width: 0;
-        }
-        &:after {
-            content: "";
-            padding: 0;
-            display: none;
-        }
-    }
     ul {
         margin: 0;
         padding: 0;
