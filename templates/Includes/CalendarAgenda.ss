@@ -44,10 +44,10 @@
 													$Description
 												</div>
 												<div class="col-sm-3">
-													<a href="{$Top.Link}/event/{$ID}" class="btn btn-red transparent">Read More</a>
+													<a href="{$Top.Link}/event/{$ID}" class="btn transparent">Read More</a>&nbsp;
 													<% if $IsRecurring() %>
 														<div class="dropdown pull-right">
-															<button class="btn btn-red dropdown-toggle" type="button" data-toggle="dropdown">
+															<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
 																Save event
 																<span class="caret"></span>
 															</button>
@@ -57,7 +57,7 @@
 															</ul>
 														</div>
 													<% else %>
-														<a href="/download/calendar-invite/{$ID}" class="btn btn-red pull-right">Save event</a>
+														<a href="/download/calendar-invite/{$ID}" class="btn margin-right pull-right">Save event</a>
 													<% end_if %>
 												</div>
 											</div>
