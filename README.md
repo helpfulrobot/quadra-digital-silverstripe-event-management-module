@@ -22,7 +22,7 @@ composer require quadra-digital/silverstripe-event-management-module
 * Run a /dev/build and /?flush=all against the website
 
 ## Configuration
-* Custom Colours - You can modify the primary and secondary colour definitions in /scss/layout.scss, install and run gulp and voila, colour coded event templates
+* Custom Colours - You can modify the primary and secondary colour definitions in /scss/layout.scss, run `npm install` in the events-management directory, run gulp and voila, colour coded event templates
 
 ## Licence
 This module uses the BSD 3-Clause license. See the [LICENCE.md](/LICENCE.md) file for the full licence.
