@@ -1,19 +1,23 @@
-.btn, button {
-    margin: 0;
-    font-size: 12px;
-    background: $primary-colour;
-    color: $white;
-    &:hover {
-        background: $secondary-colour;
+#EventContent {
+
+    .btn, button {
+        margin: 0;
+        font-size: 12px;
+        background: $primary-colour;
+        color: $white;
+        &:hover {
+            background: $secondary-colour;
+        }
     }
-}
-.btn {
-    &:hover {
-        border-width: 0;
+    .btn {
+        &:hover {
+            border-width: 0;
+        }
+        &:after {
+            content: "";
+            padding: 0;
+            display: none;
+        }
     }
-    &:after {
-        content: "";
-        padding: 0;
-        display: none;
-    }
+
 }
