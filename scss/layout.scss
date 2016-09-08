@@ -1,0 +1,126 @@
+/*******************************************************************************
+* LAYOUT
+* SilverStripe Event Management Module
+********************************************************************************
+
+/*******************************************************************************
+* COLOURS
+*******************************************************************************/
+$white: #FFFFFF;
+$black: #000000;
+$light-grey: #F9F9F9;
+$dark-grey: #4A4A4A;
+
+$primary-colour: #C70024;
+$secondary-colour: #AD1419;
+
+/*******************************************************************************
+* Imports
+* Third party
+*******************************************************************************/
+@import 'bootstrap';
+
+/*******************************************************************************
+* Imports
+* Styling imports
+*******************************************************************************/
+@import 'partials/normalize';
+@import 'partials/buttons';
+@import 'partials/events';
+@import 'pages/calendar';
+
+/*******************************************************************************
+* General
+*******************************************************************************/
+.full {width: 100%;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-bold {font-weight: bold;}
+.text-italic {font-style: italic;}
+.cta-holder { width: 100%; overflow: auto; padding-top: 20px;}
+.bg-white {background: $white;}
+.overflow {
+	overflow: auto;
+}
+.no-center-xs {
+	@media (max-width: 767px) {
+		text-align: left;
+	}
+}
+div.dropdown {
+    position: relative;
+    button.dropdown-toggle span.caret {
+        position: absolute;
+        top: 46%;
+        right: 8px;
+    }
+    ul.dropdown-menu {
+        padding-top: 5px;
+        width: 100%;
+        min-width: 100%;
+        a {
+            padding: 8px;
+            white-space: normal;
+        }
+    }
+}
+.btn-accordion {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 20px;
+    line-height: 14px;
+    font-size: 14px;
+    border-width: 0;
+    font-weight: bold;
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        padding: 10px 5px;
+        color: $primary-colour;
+        content: "\25B2";
+    }
+    &.collapsed {
+        &:after {
+            content: "\25BC";
+        }
+    }
+}
+a.loading {
+    cursor: wait;
+}
+ul {
+    &.inline-list, &.checkboxset {
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+    }
+    @media (max-width: 767px) {
+        &.checkboxset li {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+}
+.wrapper {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.no-padding {
+    padding: 0;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.margin-top {
+    margin-top: 10px;
+}
+.margin-right {
+    margin-right: 5px;
+}
+.wrapping {
+    white-space: normal;
+}

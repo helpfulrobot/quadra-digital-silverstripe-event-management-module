@@ -1,0 +1,10 @@
+---
+Name: eventroutes
+After: 
+  - 'framework/routes#coreroutes'
+---
+Director:
+  rules:
+    'events//month/$Month!'                         : 'EventsPage_Controller'
+    'events//$Action/$EventID!/$InstanceTimestamp'  : 'Event_Controller'
+    'download//$Action!/$EventID!'                  : 'Event_Controller'
