@@ -77,10 +77,10 @@
 														<li>$Description.FirstSentence</li>
 													<% end_if %>
 												</ul>
-												<a href="{$Link}" class="btn btn-red pull-left">Read More</a>
+												<a href="{$Link}" class="btn pull-left">Read More</a>
 												<% if $IsRecurring() %>
 													<div class="dropdown pull-right">
-														<button class="btn btn-red dropdown-toggle" type="button" data-toggle="dropdown">
+														<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
 															Save event
 															<span class="caret"></span>
 														</button>
@@ -90,7 +90,7 @@
 														</ul>
 													</div>
 												<% else %>
-													<a href="/download/calendar-invite/{$ID}" class="btn btn-red pull-right">Save event</a>
+													<a href="/download/calendar-invite/{$ID}" class="btn pull-right">Save event</a>
 												<% end_if %>
 											</div>
 

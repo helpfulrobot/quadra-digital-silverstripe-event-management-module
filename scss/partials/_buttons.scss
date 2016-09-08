@@ -1,4 +1,4 @@
-a.btn, button {
+.btn, button {
     margin: 0;
     font-size: 12px;
     background: $primary-colour;
@@ -7,7 +7,7 @@ a.btn, button {
         background: $secondary-colour;
     }
 }
-a.btn {
+.btn {
     &:hover {
         border-width: 0;
     }
